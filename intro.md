@@ -1,13 +1,18 @@
 
 ### Js Data Type
 1. string
-2. number
-3. bigint
+2. number : js numbers are always double ( 64-bit floating point)
+3. bigint : [ES2020] store larger values than number.
 4. boolean
 5. undefined
 6. null
 7. symbol
-8. Object: object, array, date
+8. Object : object { name: value } , array [], date
+9. typeof operator
+
+- object properties can be accessed in 2 ways:
+1. objectname.propertyname
+2. objectname["propertyname"]
 
 ### Variable declaration
 1. var -  declare a varible [ 1995 to 2015 ]
@@ -53,6 +58,24 @@ document.getElementById("demo").innerHTML = x ??= 5;
 - ternary
 - type
 ```
-== :
-=== : 
+== : compare values
+=== : compare values and type
 ```
+
+<i>when adding a number and string, number is treated as string. Depeding upon sequence</i>
+```
+let x = "apple" + 10 + 8;  //apple18
+let a = 78 + "apple" + 8;  //78apple8
+```
+
+### fucntions
+- accessing a function without () return the function , not the function result.
+
+### this keyword
+- refers to an object. which object dependes on how this is beign invoked.
+- referes to the owner of the function.
+- if an object mehtod : refers to the object
+- alone : refers to global object
+- function : refers to global object
+- function in strict mode : this is undefiend
+- event - refer to element that received the event.
